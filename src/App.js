@@ -8,8 +8,6 @@ import Select from "@material-ui/core/Select"
 import Button from "@material-ui/core/Button"
 import { Line } from "react-chartjs-2"
 
-// const API_SERVER = "http://0.0.0.0:5000/"
-
 function App() {
     const [gainers, setGainers] = useState([])
     const [symbol, setSymbol] = useState("")
