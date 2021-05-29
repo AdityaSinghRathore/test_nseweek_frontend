@@ -54,9 +54,6 @@ function App() {
                             data: data.predictions,
                         },
                     ],
-                    // dates: data.dates,
-                    // truth: data.truth,
-                    // predictions: data.predictions,
                 })
             })
     }
