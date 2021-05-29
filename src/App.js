@@ -36,7 +36,7 @@ function App() {
                     labels: data.dates,
                     datasets: [
                         {
-                            label: `Actual ${symbol}`,
+                            label: `Actual Close ${symbol}`,
                             fill: false,
                             lineTension: 0.5,
                             backgroundColor: "#03DAC6",
@@ -45,7 +45,7 @@ function App() {
                             data: data.truth,
                         },
                         {
-                            label: `Predicted ${symbol}`,
+                            label: `Predicted CLose ${symbol}`,
                             fill: false,
                             lineTension: 0.5,
                             backgroundColor: "#C20000",
