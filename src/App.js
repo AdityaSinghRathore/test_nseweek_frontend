@@ -14,9 +14,10 @@ function App() {
     const [stockData, setStockData] = useState({})
 
     useEffect(() => {
-        fetch("/api/gainers")
+        fetch("https://40.80.83.219/api/gainers")
             .then((res) => res.json())
             .then((data) => {
+                console.log(data)
                 setGainers(data)
             })
     }, [])
@@ -28,7 +29,8 @@ function App() {
 
     const getPredctions = () => {
         let stock = symbol
-        fetch("/api/predict/" + stock)
+
+        fetch("https://40.80.83.219/api/predict/" + stock)
             .then((res) => res.json())
             .then((data) => {
                 setStockData({
