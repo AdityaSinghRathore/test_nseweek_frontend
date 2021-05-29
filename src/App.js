@@ -123,6 +123,14 @@ function App() {
                     </Grid>
                 </Paper>
             )}
+            <Typography
+                variant="caption"
+                align="center"
+                component="p"
+                gutterBottom
+            >
+                LOGS: {`gainers: ${gainers} \n Stock Data: ${stockData}`}
+            </Typography>
         </div>
     )
 }
